@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Datos Visitante</title>
+        <link rel="stylesheet" th:href="@{/css/normalize.css}" />
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" th:href="@{/css/estilo.css}" />
+
+
+    </head>
+
+    <body style=" height:100%;
+  margin:0;
+  display: flex;
+  flex-direction: column;">
+; 
+        <form th:action="@{/home/validarVisitantes}" method="get" style="margin-top: auto; margin-bottom: auto; padding-top: 30px; margin-top: 50px">
+
+            <h1>Consultar Visitante</h1>
+            
+            <fieldset>
+                <label for="temperatura">Numero de documento:</label>
+                <input type="text" id="cocumento" name="documento">
+            </fieldset>
+
+
+            <button type="submit">Consultar</button>
+            <button><a th:href="@{/home}">Regresar</a></button>
+        </form>
+
+
+        <!--  <label>Interests:</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
+            <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>-->
+
+
+
+    </body>
+
+</html>
+</body>
+
+</html>
